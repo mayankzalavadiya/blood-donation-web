@@ -89,7 +89,7 @@ const currentUserController = async (req, res) => {
     const user = await userModel.findOne({ _id: req.body.userId });
     return res.status(200).send({
       success: true,
-      message: "user fetched successfully",
+      message: "User Fetched Successfully",
       user,
     });
   } catch (error) {
@@ -101,5 +101,4 @@ const currentUserController = async (req, res) => {
     });
   }
 };
-
 module.exports = { registerController, loginController, currentUserController };
