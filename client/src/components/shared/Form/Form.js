@@ -28,7 +28,7 @@ const Form = ({ formType, submitBtn, formTitle }) => {
       <form onSubmit={handleSubmit}>
         <h1 className="text-center">{formTitle}</h1>
         <hr />
-        <div className="d-flex mb-3">
+        <div className="d-flex mb-3 form-field">
           <div className="form-check">
             <input
               type="radio"
